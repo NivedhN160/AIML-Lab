@@ -58,7 +58,7 @@ def bfs(graph, start, goal):
             print(f"  Final Path Found by BFS: {' -> '.join(path)}")
             return path
             
-        if node not in visited: `
+        if node not in visited:
             visited.append(node)
             for neighbor in sorted(graph.get(node, [])):
                 if neighbor not in visited:
